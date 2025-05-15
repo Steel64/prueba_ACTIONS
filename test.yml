@@ -1,0 +1,20 @@
+key: "Hola"
+
+person:
+  name: Jhon
+  age: 30
+  city: New York
+  item:
+    - item1
+    - item2
+    - item3
+  items2:
+    - item4: hola
+    - item5: hola
+    - item6: hola
+
+scripts: |
+  touuch /tmp/test.txt
+  echo "Hello, World!"
+
+
