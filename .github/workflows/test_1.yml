@@ -1,6 +1,12 @@
 name: Hola mundo
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - maste
+  pull_request:
+    branches:
+      - master
 
 jobs:
   #job 1
