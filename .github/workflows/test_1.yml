@@ -3,22 +3,29 @@ name: Hola mundo
 on: [push]
 
 jobs:
+  #job 1
   hola:
     runs-on: ubuntu-latest
-
     steps:
+      # step 1
       - name: Hola mundo
         run : echo "Hola mundo"
+      # step 2
       - name: touch file
         run : touch hola.txt
+      #step 3
       - name: set text
         run : echo "hola mundo2" >> hola.txt
+      #step 4
       - name: read file
         run : cat hola.txt      
-  
+  #job 2
   other:
     runs-on: ubuntu-latest
-
+    # dependencia entre jobs
+    needs: [hola]
+    # o tambien needs: hola
     steps:
+      # step 1
       - name: ls
         run : echo "new ls"
