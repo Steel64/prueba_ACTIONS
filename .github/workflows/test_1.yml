@@ -1,5 +1,6 @@
 name: Hola mundo
 
+#uso de eventos (cuando se hace un push o un pull request se ejecuta el workflow)
 on:
   push:
     branches:
