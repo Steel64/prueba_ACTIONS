@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Hola mundo
         run : echo "Hola mundo"
-      - name: total
+      - name: touch file
         run : touch hola.txt
       - name: set text
         run : echo "hola mundo2" >> hola.txt
