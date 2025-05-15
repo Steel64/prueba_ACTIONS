@@ -1,5 +1,6 @@
 name: Hola mundo
-#uso de eventos (cuando se hace un push o un pull request se ejecuta el workflow)
+#uso de eventos (cuando se hace un push o un pull request se ejecuta el workflow
+#o tambien usar on: [push, pull_request])
 on:
   push:
     branches:
